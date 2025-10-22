@@ -1,0 +1,180 @@
+<!DOCTYPE html> <!-- Determinamos el tipo de documento -->
+<html lang="es"> <!-- Aqui incluimos todo el elemento html -->
+
+<head> <!-- Cabecera del documento: metadatos y título -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curriculum Vitae</title> <!-- Titulo de la pagina -->
+    <meta name="description" content="Currículum personal de Juan Álvaro Ruano Fernández." />
+    <!-- Metadato descriptivo, resume el contenido para buscadores -->
+</head>
+
+<body> <!-- Contenedor con toda la informacion visibles para el usuario -->
+    <header>
+        <h1>Juan Álvaro Ruano Fernández</h1>
+        <p>Graduado en ADE | Experiencia en Retail (Jefe de Sección) y Logística</p>
+    </header>
+
+    <main id="contenido-principal">
+        <section aria-labelledby="tit-perfil">
+            <h2 id="tit-perfil">Datos personales</h2>
+
+            <dl>
+                <dt>Nombre y apellidos</dt> <!-- dt = término -->
+                <dd>Juan Álvaro Ruano Fernández</dd> <!-- dd = valor -->
+
+                <dt>Fecha y lugar de nacimiento</dt>
+                <dd>20 de junio de 1984, Valencia</dd>
+
+                <dt>Estado civil</dt>
+                <dd>Casado</dd>
+
+                <dt>Nacionalidad</dt>
+                <dd>Española</dd>
+
+                <dt>Dirección</dt>
+                <dd>C/ Estornell, nº 37, San Antonio de Benagéber, 46184</dd>
+
+                <dt>Teléfono</dt>
+                <dd><a href="tel:+34123456789" aria-label="Llamar al 123 456 789">123 456 789</a></dd>
+
+                <dt>E-mail</dt>
+                <dd><a href="mailto:email@gmail.com">email@gmail.com</a></dd>
+            </dl>
+
+        </section>
+
+        <section aria-labelledby="tit-exp">
+            <h2 id="tit-exp">Experiencia profesional</h2>
+
+            <article aria-labelledby="exp-1-tit"> <!--  cada puesto como <article> con su encabezado -->
+                <h3 id="exp-1-tit">Jefe de Sección — Game Stores Iberia (Sector Informática/Videojuegos)</h3>
+                <p><strong>2010 — Actualidad</strong></p>
+                <ul>
+                    <li>Gestión de equipo y objetivos de venta.</li>
+                    <li>Atención al cliente y resolución de incidencias.</li>
+                </ul>
+            </article>
+
+            <article aria-labelledby="exp-2-tit">
+                <h3 id="exp-2-tit">Departamento de Logística y Operaciones — Agencia Marítima Camar S.L.</h3>
+                <p><strong>Prácticas: Jul–Sep 2008</strong></p>
+                <ul>
+                    <li>Soporte en procesos de import/export y coordinación operativa.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section aria-labelledby="tit-formacion">
+            <h2 id="tit-formacion">Formación</h2>
+            <ul>
+                <li>Licenciatura en Administración y Dirección de Empresas — ESIC (UMH)</li>
+                <li>Seminarios: PGC, Financiación de la empresa, Atención al cliente</li>
+                <li>Actualmente cursando Grado Superior de DAW</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="tit-competencias">
+            <h2 id="tit-competencias">Competencias</h2>
+            <ul>
+                <li>Desarrollo web con HTML5, CSS3, y JavaScript</li>
+                <li>Conocimientos de Java y JSP</li>
+                <li>Control de versiones con Git y GitHub</li>
+                <li>Uso de entornos de desarrollo: Visual Studio Code, Eclipse, IntelliJ, NetBeans</li>
+                <li>MS Office (usuario avanzado): Word, PowerPoint, Internet & E-mail</li>
+                <li>Idiomas: Inglés (medio-alto) · Valenciano (medio–alto)</li>
+                <li>Conducción: Permiso B, vehículo propio</li>
+            </ul>
+        </section>
+
+        <section aria-labelledby="tit-faq"> <!-- FAQ accesible -->
+            <h2 id="tit-faq">Preguntas frecuentes (FAQ)</h2>
+
+            <button id="faq1" aria-expanded="false" aria-controls="r1">
+                ¿Qué responsabilidades has tenido como jefe de sección?
+            </button>
+            <div id="r1" role="region" aria-labelledby="faq1" hidden>
+                <p>Encargado del correcto funcionamiento de la tienda asi como de los empleados que trabajan en la
+                    misma.</p>
+            </div>
+
+            <button id="faq2" aria-expanded="false" aria-controls="r2">
+                ¿Qué te llevó a formarte en Desarrollo Web?
+            </button>
+            <div id="r2" role="region" aria-labelledby="faq2" hidden>
+                <p>Siempre me ha interesado el sector de la informatica, y busco poder usar esos conocimientos y
+                    trabajar en
+                    unos entornos acordes con ello.</p>
+            </div>
+
+            <button id="faq3" aria-expanded="false" aria-controls="r3">
+                ¿Qué consideras tu mayor fortaleza profesional?
+            </button>
+            <div id="r3" role="region" aria-labelledby="faq3" hidden>
+                <p>La motivacion personal y el trabajo en equipo.</p>
+            </div>
+
+            <button id="faq4" aria-expanded="false" aria-controls="r4">
+                ¿Qué tipo de empresa te gustaría integrar en el futuro?
+            </button>
+            <div id="r4" role="region" aria-labelledby="faq4" hidden>
+                <p>Aunque me encantaria algo relacionado con el sector de los videojuegos (llevo mas de 15 años de
+                    experiencia)
+                    realmente estaria abierto a muchas opciones relacionadas con la informatica.</p>
+            </div>
+
+            <button id="faq5" aria-expanded="false" aria-controls="r5">
+                ¿Qué tipo de jornada prefieres (completa, parcial, flexible)?
+            </button>
+            <div id="r5" role="region" aria-labelledby="faq5" hidden>
+                <p>Completa</p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <h2>Contacto</h2>
+        <address>
+            <a href="mailto:email@gmail.com" aria-label="Enviar correo a Juan Álvaro Ruano Fernández">
+                email@gmail.com
+            </a>
+        </address>
+    </footer>
+
+    <!-- Interactividad con JavaScript -->
+    <script>
+        // Seleccionamos todos los botones dentro de la sección FAQ
+        const faqButtons = document.querySelectorAll('section[aria-labelledby="tit-faq"] button');
+
+        faqButtons.forEach((btn) => {
+            const panelId = btn.getAttribute('aria-controls');
+            const panel = document.getElementById(panelId);
+
+            // Si el panel existe, añadimos el evento de clic
+            if (panel) {
+                btn.addEventListener('click', () => toggleFAQ(btn, panel));
+            }
+        });
+
+        // Función que alterna el estado del FAQ
+        function toggleFAQ(button, panel) {
+            const expanded = button.getAttribute('aria-expanded') === 'true';
+
+            // Actualizamos el valor de aria-expanded
+            button.setAttribute('aria-expanded', String(!expanded));
+            // Mostramos u ocultamos la respuesta
+            panel.hidden = expanded;
+
+            // Accesibilidad extra: foco al panel cuando se abre
+            if (!expanded) {
+                panel.setAttribute('tabindex', '-1');
+                panel.focus();
+                panel.addEventListener('blur', () => panel.removeAttribute('tabindex'), { once: true });
+            }
+        }
+    </script>
+
+</body>
+
+</html>
